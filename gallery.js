@@ -4,7 +4,7 @@ const mUrl = 'images.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
 $(document).ready(() => {
-  $('.details').hide() // Hide details initially
+ // $('.details').hide()  // Hide details initially
 
   // Call a function here to start the timer for the slideshow
 
@@ -25,7 +25,6 @@ function fetchJSON () {
   $.getJSON('images.json', function(data) {
     mImages = data;
     console.log("Data loaded into mImages:", mImages);
-    processImages();
 });
 
   // Use $.getJSON here to request the JSON data from mUrl
